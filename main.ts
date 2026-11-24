@@ -4,9 +4,9 @@ import { join } from "node:path";
 const OUTPUT_DIR = process.env.OUTPUT_DIR || "/output";
 const ENTRY_PATH = join(OUTPUT_DIR, "entry.txt");
 
-// Draft 7: vulnerable dying phone at 1% with a sudden panic twist and mid-word flatline
+// Draft 8: the 1% phenomenon itself is the joke — holding 1% out of spite until the Uber arrives
 const LAST_TEXT =
-  "1%, screen's dimming, I'm scared. Hold me—no, not over the toilet, please, NOT OVER THE TOI—";
+  "I've held 1% for 40 minutes out of pure spite. I'm letting go the exact second your Uber pulls up.";
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 writeFileSync(ENTRY_PATH, `${LAST_TEXT}\n`, "utf8");
