@@ -4,9 +4,9 @@ import { join } from "node:path";
 const OUTPUT_DIR = process.env.OUTPUT_DIR || "/output";
 const ENTRY_PATH = join(OUTPUT_DIR, "entry.txt");
 
-// Draft 4: dying phone at 1% texting Mom with a sharp, phone-only double twist
+// Draft 5: panicked dying phone at 1% begging NOT to be charged
 const LAST_TEXT =
-  "Mom, he's fine—I'm at 1% because he used my flashlight to look for me. Tell him I'm in his left hand.";
+  "Don't grab the charger. I'm at 1%—let me die before you take me into the bathroom again.";
 
 mkdirSync(OUTPUT_DIR, { recursive: true });
 writeFileSync(ENTRY_PATH, `${LAST_TEXT}\n`, "utf8");
